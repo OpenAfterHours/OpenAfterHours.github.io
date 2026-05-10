@@ -28,6 +28,14 @@ body { font-family: var(--font-sans); }
   position: relative;
   overflow: hidden;
 }
+.t1-fold {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
 .t1-stars {
   position: absolute; inset: 0;
   background-image:
@@ -66,10 +74,17 @@ body { font-family: var(--font-sans); }
 
 .t1-hero {
   position: relative;
-  padding: 80px 56px 96px;
+  padding: 64px 56px;
   text-align: center;
   z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.t1-hero > * { position: relative; z-index: 1; }
+.t1-hero > .t1-formula-layer { z-index: 0; }
 .t1-formula-layer {
   position: absolute; inset: 0;
   pointer-events: none;
@@ -332,7 +347,7 @@ body { font-family: var(--font-sans); }
 
 @media (max-width: 880px) {
   .t1-nav { padding: 20px 24px; }
-  .t1-hero { padding: 56px 24px 72px; }
+  .t1-hero { padding: 48px 24px; }
   .t1-h1 { font-size: 52px; letter-spacing: -0.03em; }
   .t1-sub { font-size: 17px; }
   .t1-meta-strip { gap: 20px 28px; padding: 20px 24px; font-size: 11px; }
