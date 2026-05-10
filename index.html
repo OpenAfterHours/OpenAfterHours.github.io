@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>OpenAfterHours — Open source regulatory tools, built after hours</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="Open-source tooling for regulatory work — written by engineers, for engineers, in the small hours." />
+
+<meta property="og:title" content="OpenAfterHours" />
+<meta property="og:description" content="Open-source tooling for the regulatory work that protects the public but rarely makes the slide deck." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://openafterhours.github.io" />
+<meta property="og:image" content="https://openafterhours.github.io/assets/img/oah_icon.png" />
+
+<link rel="icon" type="image/png" href="assets/img/oah_icon.png" />
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/landing.css" />
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+<div class="lp-root t1">
+  <div class="t1-stars"></div>
+
+  <nav class="t1-nav">
+    <div class="t1-brand">
+      <img src="assets/img/oah_icon.png" alt="" />
+      <span class="org">OpenAfterHours</span>
+    </div>
+    <div class="t1-nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#mission">Mission</a>
+      <a href="#docs">Docs</a>
+      <a class="gh-btn" href="https://github.com/OpenAfterHours">
+        <svg class="t1-icn" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11 11 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+        github.com/OpenAfterHours
+      </a>
+    </div>
+  </nav>
+
+  <header class="t1-hero">
+    <div class="t1-formula-layer">
+      <span style="top:8%;left:4%;font-size:13px;transform:rotate(-2deg);--_op:0.08">K = LGD × Φ[√(1−R)⁻¹·Φ⁻¹(PD) + √(R/(1−R))·Φ⁻¹(0.999)] − PD·LGD</span>
+      <span style="top:14%;left:62%;font-size:16px;transform:rotate(1.4deg);--_op:0.10">RWA = K × 12.5 × EAD</span>
+      <span style="top:76%;left:8%;font-size:12px;transform:rotate(-1deg);--_op:0.12">R = 0.12·(1−e⁻⁵⁰·ᴾᴰ)/(1−e⁻⁵⁰) + 0.24·[1 − (1−e⁻⁵⁰·ᴾᴰ)/(1−e⁻⁵⁰)]</span>
+      <span style="top:64%;left:70%;font-size:13px;transform:rotate(2.2deg);--_op:0.08">b = (0.11852 − 0.05478·ln(PD))²</span>
+      <span style="top:44%;left:36%;font-size:11px;transform:rotate(-2.2deg);--_op:0.10">MA = (1 + (M − 2.5)·b) / (1 − 1.5·b)</span>
+      <span style="top:36%;left:80%;font-size:14px;transform:rotate(1.6deg);--_op:0.12">Φ(x) = ½·[1 + erf(x/√2)]</span>
+      <span style="top:6%;left:42%;font-size:12px;transform:rotate(-0.6deg);--_op:0.08">EL = PD × LGD</span>
+      <span style="top:36%;left:18%;font-size:10px;transform:rotate(2.6deg);--_op:0.10">RW = K · 12.5</span>
+      <span style="top:58%;left:6%;font-size:11px;transform:rotate(-1.6deg);--_op:0.12">CCF × Off-Balance = EAD</span>
+      <span style="top:86%;left:72%;font-size:11px;transform:rotate(0.8deg);--_op:0.08">SA: RWA = EAD × RW%</span>
+      <span style="top:22%;left:88%;font-size:14px;transform:rotate(-2.6deg);--_op:0.10">Φ⁻¹(PD)</span>
+      <span style="top:84%;left:28%;font-size:10px;transform:rotate(1.2deg);--_op:0.12">N[(1−R)⁻⁰·⁵ · G(PD)]</span>
+      <span style="top:92%;left:56%;font-size:11px;transform:rotate(-0.4deg);--_op:0.08">PD ∈ [0.0003, 1]</span>
+      <span style="top:28%;left:50%;font-size:9px;transform:rotate(2deg);--_op:0.10">G(0.999) ≈ 3.0902</span>
+    </div>
+
+    <div class="t1-eyebrow"><span class="dot"></span>open source · regulatory tools · built after hours</div>
+    <div class="t1-owl-tile"><img src="assets/img/oah_icon.png" alt="OpenAfterHours owl" /></div>
+    <h1 class="t1-h1">
+      The boring half of finance,
+      <br />
+      <span class="accent t1-typer" data-phrases='["made fast","made securely","made open"]'><span class="t1-typer-text"></span><span class="cursor"></span></span>
+    </h1>
+    <p class="t1-sub">
+      Open-source tooling for the regulatory work that protects the public but rarely makes
+      the slide deck — written by engineers, for engineers, in the small hours.
+    </p>
+    <div class="t1-hero-cta">
+      <a class="t1-cta-primary" href="https://github.com/OpenAfterHours">
+        <svg class="t1-icn" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11 11 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3z"/></svg>
+        View on GitHub
+      </a>
+      <a class="t1-cta-secondary" href="#projects">Explore the projects →</a>
+    </div>
+  </header>
+
+  <div class="t1-meta-strip">
+    <span><span class="pulse-dot"></span> 2 active repos</span>
+    <span>licence <strong>Apache 2.0</strong></span>
+    <span>since <strong>Q4 2025</strong></span>
+    <span><strong>~1,915</strong> tests passing</span>
+    <span>Polars · uv · marimo</span>
+  </div>
+
+  <section class="t1-projects" id="projects">
+    <div class="t1-section-title">/// what's in the repo</div>
+    <h2 class="t1-section-h2">Two tools, both <em>quietly serious</em> about regulatory plumbing.</h2>
+    <div class="t1-card-grid">
+
+      <div class="t1-flip" tabindex="0">
+        <div class="t1-flip-inner">
+          <div class="t1-flip-face front">
+            <div class="t1-flip-icon">🧮</div>
+            <div class="t1-flip-name">OpenAfterHours / rwa_calculator</div>
+            <h3 class="t1-flip-title">UK Credit Risk RWA Calculator</h3>
+            <p class="t1-flip-desc">High-performance Risk-Weighted Assets engine for CRR (Basel 3.0) and Basel 3.1 (PRA PS1/26). Standardised, F-IRB, A-IRB, Slotting. Polars all the way down.</p>
+            <div class="t1-flip-tags">
+              <span class="t1-flip-tag">python</span>
+              <span class="t1-flip-tag">polars</span>
+              <span class="t1-flip-tag">marimo</span>
+              <span class="t1-flip-tag">basel-3.1</span>
+              <span class="t1-flip-tag">pra-ps1/26</span>
+            </div>
+            <span class="t1-flip-flipnote">hover for the live read-out</span>
+          </div>
+          <div class="t1-flip-face back">
+            <div class="t1-flip-back-head">
+              <span class="name">OpenAfterHours / rwa_calculator</span>
+              <a class="gh-link" href="https://github.com/OpenAfterHours/rwa_calculator">open on github →</a>
+            </div>
+            <div class="t1-term">
+              <div class="t1-term-row"><span class="pr">$</span><span class="cmd">pip install rwa-calculator</span></div>
+              <div class="t1-term-row"><span class="pr">&gt;&gt;&gt;</span><span class="cmd">from rwa_calc import <span class="hl">CreditRiskCalc</span></span></div>
+              <div class="t1-term-row"><span class="pr">&gt;&gt;&gt;</span><span class="cmd">calc = CreditRiskCalc(framework=<span class="yl">"basel_3_1"</span>)</span></div>
+              <div class="t1-term-row"><span class="pr">&gt;&gt;&gt;</span><span class="cmd">r = calc.load(<span class="yl">"book.parquet"</span>).calculate()</span></div>
+              <div class="t1-term-row"><span class="out">computed <span class="hl">3,418,902</span> exposures · <span class="gn">847ms</span></span></div>
+              <div class="t1-term-row"><span class="out">rwa: £<span class="hl">94.2bn</span> · capital req: £<span class="hl">7.54bn</span></span></div>
+              <div class="t1-term-row"><span class="pr">&gt;&gt;&gt;</span><span class="cmd">r.compare(<span class="yl">"crr"</span>).delta_pct</span></div>
+              <div class="t1-term-row"><span class="out"><span class="hl">+11.8%</span> uplift under Basel 3.1</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="t1-flip" tabindex="0">
+        <div class="t1-flip-inner">
+          <div class="t1-flip-face front">
+            <div class="t1-flip-icon">🌙</div>
+            <div class="t1-flip-name">OpenAfterHours / moonlit</div>
+            <h3 class="t1-flip-title">Moonlit</h3>
+            <p class="t1-flip-desc">Bundle a uv-managed project — or a whole uv workspace — into a single self-contained zipapp per PEP 441. No installer. No host venv. Just one .pyz (or .exe) and a Python.</p>
+            <div class="t1-flip-tags">
+              <span class="t1-flip-tag">uv</span>
+              <span class="t1-flip-tag">zipapp</span>
+              <span class="t1-flip-tag">pep-441</span>
+              <span class="t1-flip-tag">ci-friendly</span>
+              <span class="t1-flip-tag">no-installer</span>
+            </div>
+            <span class="t1-flip-flipnote">hover for the live read-out</span>
+          </div>
+          <div class="t1-flip-face back">
+            <div class="t1-flip-back-head">
+              <span class="name">OpenAfterHours / moonlit</span>
+              <a class="gh-link" href="https://github.com/OpenAfterHours/moonlit">open on github →</a>
+            </div>
+            <div class="t1-term">
+              <div class="t1-term-row"><span class="pr">$</span><span class="cmd">uv add --dev moonlit</span></div>
+              <div class="t1-term-row"><span class="pr">$</span><span class="cmd">moonlit build <span class="hl">--workspace</span></span></div>
+              <div class="t1-term-row"><span class="out"><span class="gn">→</span> resolving uv.lock          <span class="gn">ok</span></span></div>
+              <div class="t1-term-row"><span class="out"><span class="gn">→</span> 14 wheels · 0 sdist        <span class="gn">ok</span></span></div>
+              <div class="t1-term-row"><span class="out"><span class="gn">→</span> writing app.pyz            <span class="gn">ok</span></span></div>
+              <div class="t1-term-row"><span class="out"><span class="hl">dist/app.pyz</span>   18.4 MB · sha256:7b…3c</span></div>
+              <div class="t1-term-row"><span class="pr">$</span><span class="cmd">python app.pyz <span class="yl">--check</span></span></div>
+              <div class="t1-term-row"><span class="out">all green · <span class="gn">no host install required</span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="t1-mission" id="mission">
+    <div class="t1-mission-grid">
+      <div>
+        <div class="t1-section-title">/// open after hours</div>
+        <h2 class="t1-section-h2" style="margin-bottom:0">
+          Regulation protects the public.<br />
+          It shouldn't <em>cost the bank</em><br />millions to comply.
+        </h2>
+      </div>
+      <div>
+        <div class="t1-pillar">
+          <span class="num">01 / Open source by default</span>
+          <h4>Transparency over secrecy.</h4>
+          <p>
+            Capital adequacy code shouldn't be a black box. Every formula is in the open,
+            every assumption auditable, every result reproducible from the same lockfile.
+          </p>
+        </div>
+        <div class="t1-pillar">
+          <span class="num">02 / Lowest possible overhead</span>
+          <h4>Fast enough to be invisible.</h4>
+          <p>
+            Compliance work doesn't generate revenue — every hour spent on it is a tax on the bank.
+            Polars and uv keep that tax small. Millions of exposures in seconds, not hours.
+          </p>
+        </div>
+        <div class="t1-pillar">
+          <span class="num">03 / Built after hours</span>
+          <h4>Made by people who've shipped this stuff.</h4>
+          <p>
+            Maintained by ex-bank engineers in the spare hours that don't belong to a quarterly cycle —
+            which is, it turns out, exactly when good infrastructure tends to get written.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="t1-foot" id="docs">
+    <div>
+      <div class="t1-foot-tag">OpenAfterHours · 2026 · Apache 2.0</div>
+      <div><span class="prompt">$ </span>git clone https://github.com/OpenAfterHours/rwa_calculator</div>
+    </div>
+    <div class="col-r">
+      <div class="t1-foot-tag">Find us</div>
+      <div><a href="https://github.com/OpenAfterHours">github.com/OpenAfterHours</a> · <a href="https://github.com/OpenAfterHours/rwa_calculator">rwa_calculator</a> · <a href="https://github.com/OpenAfterHours/moonlit">moonlit</a></div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>
