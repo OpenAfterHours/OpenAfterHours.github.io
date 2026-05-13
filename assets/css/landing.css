@@ -222,7 +222,7 @@ body { font-family: var(--font-sans); }
 .t1-section-h2 em { font-style: normal; color: var(--oah-orange); }
 
 .t1-card-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;
 }
 .t1-flip {
   perspective: 1600px;

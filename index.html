@@ -62,7 +62,7 @@
     <h1 class="t1-h1">
       The boring half of finance,
       <br />
-      <span class="accent t1-typer" data-phrases='["made fast","made securely","made open"]'><span class="t1-typer-text"></span><span class="cursor"></span></span>
+      <span class="accent t1-typer" data-phrases='["made fast","made securely","made open","made auditable","made reproducible","made portable","made boring","made after hours"]'><span class="t1-typer-text"></span><span class="cursor"></span></span>
     </h1>
     <p class="t1-sub">
       Open-source tooling for the regulatory work that protects the public but rarely makes
@@ -78,17 +78,17 @@
   </header>
 
   <div class="t1-meta-strip">
-    <span><span class="pulse-dot"></span> 2 active repos</span>
+    <span><span class="pulse-dot"></span> 3 active repos</span>
     <span>licence <strong>Apache 2.0</strong></span>
-    <span>since <strong>Q4 2025</strong></span>
-    <span><strong>~1,915</strong> tests passing</span>
+    <span>since <strong>Q1 2026</strong></span>
+    <span><strong>5,000+</strong> tests passing</span>
     <span>Polars · uv · marimo</span>
   </div>
   </div>
 
   <section class="t1-projects" id="projects">
     <div class="t1-section-title">/// what's in the repo</div>
-    <h2 class="t1-section-h2">Two tools, both <em>quietly serious</em> about regulatory plumbing.</h2>
+    <h2 class="t1-section-h2">Three tools, all <em>quietly serious</em> about regulatory plumbing.</h2>
     <div class="t1-card-grid">
 
       <div class="t1-flip" tabindex="0">
@@ -161,6 +161,41 @@
         </div>
       </div>
 
+      <div class="t1-flip" tabindex="0">
+        <div class="t1-flip-inner">
+          <div class="t1-flip-face front">
+            <div class="t1-flip-icon">🔖</div>
+            <div class="t1-flip-name">OpenAfterHours / regcite</div>
+            <h3 class="t1-flip-title">Regulatory Citations, Checked in CI</h3>
+            <p class="t1-flip-desc">Static analysis for UK financial regulatory citations in Python. Annotate functions with CRR articles or PRA rules, then check them against a bundled, versioned rulebook snapshot — every commit, in CI, next to the code.</p>
+            <div class="t1-flip-tags">
+              <span class="t1-flip-tag">python</span>
+              <span class="t1-flip-tag">static-analysis</span>
+              <span class="t1-flip-tag">crr</span>
+              <span class="t1-flip-tag">pra-rulebook</span>
+              <span class="t1-flip-tag">ci-friendly</span>
+            </div>
+            <span class="t1-flip-flipnote">hover for the live read-out</span>
+          </div>
+          <div class="t1-flip-face back">
+            <div class="t1-flip-back-head">
+              <span class="name">OpenAfterHours / regcite</span>
+              <a class="gh-link" href="https://github.com/OpenAfterHours/regcite">open on github →</a>
+            </div>
+            <div class="t1-term">
+              <div class="t1-term-row"><span class="pr">$</span><span class="cmd">uv add regcite</span></div>
+              <div class="t1-term-row"><span class="pr">&gt;&gt;&gt;</span><span class="cmd">from regcite import <span class="hl">cites</span></span></div>
+              <div class="t1-term-row"><span class="pr">&gt;&gt;&gt;</span><span class="cmd">@cites(<span class="yl">"CRR Art. 153(1)(a)"</span>)</span></div>
+              <div class="t1-term-row"><span class="pr">...</span><span class="cmd">def corporate_rw(pd, lgd, m): ...</span></div>
+              <div class="t1-term-row"><span class="pr">$</span><span class="cmd">uv run regcite check</span></div>
+              <div class="t1-term-row"><span class="out"><span class="gn">→</span> scanned <span class="hl">47</span> citations       <span class="gn">ok</span></span></div>
+              <div class="t1-term-row"><span class="out"><span class="gn">→</span> rulebook v <span class="hl">2024-07-09</span>     <span class="gn">ok</span></span></div>
+              <div class="t1-term-row"><span class="out">regcite: <span class="hl">47</span> citations · <span class="gn">no issues</span> · CI green</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -194,7 +229,7 @@
           <span class="num">03 / Built after hours</span>
           <h4>Made by people who've shipped this stuff.</h4>
           <p>
-            Maintained by ex-bank engineers in the spare hours that don't belong to a quarterly cycle —
+            Maintained by engineers in the spare hours that don't belong to a quarterly cycle —
             which is, it turns out, exactly when good infrastructure tends to get written.
           </p>
         </div>
@@ -209,7 +244,7 @@
     </div>
     <div class="col-r">
       <div class="t1-foot-tag">Find us</div>
-      <div><a href="https://github.com/OpenAfterHours">github.com/OpenAfterHours</a> · <a href="https://github.com/OpenAfterHours/rwa_calculator">rwa_calculator</a> · <a href="https://github.com/OpenAfterHours/moonlit">moonlit</a></div>
+      <div><a href="https://github.com/OpenAfterHours">github.com/OpenAfterHours</a> · <a href="https://github.com/OpenAfterHours/rwa_calculator">rwa_calculator</a> · <a href="https://github.com/OpenAfterHours/moonlit">moonlit</a> · <a href="https://github.com/OpenAfterHours/regcite">regcite</a></div>
     </div>
   </footer>
 </div>
