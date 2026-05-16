@@ -12,7 +12,7 @@ makes the slide deck — written by engineers, for engineers, in the small hours
 | --- | --- | --- |
 | [rwa_calculator](https://github.com/OpenAfterHours/rwa_calculator) | UK Credit Risk RWA engine for CRR (Basel 3.0) and Basel 3.1 (PRA PS1/26) — Standardised, F-IRB, A-IRB, Slotting. | Python · Polars · marimo |
 | [moonlit](https://github.com/OpenAfterHours/moonlit) | Bundles a uv-managed project (or whole workspace) into a single self-contained zipapp per PEP 441 — no installer, no host venv. | Python · uv · zipapp |
-| [regcite](https://github.com/OpenAfterHours/regcite) | Static analysis for UK financial regulatory citations — annotate functions with CRR articles or PRA rules and check them in CI against a versioned rulebook snapshot. | Python · CRR · PRA Rulebook |
+| [watchfire](https://github.com/OpenAfterHours/watchfire) | Static analysis for UK financial regulatory citations — annotate functions with CRR articles or PRA rules and check them in CI against a versioned rulebook snapshot. | Python · CRR · PRA Rulebook |
 
 ## This site
 

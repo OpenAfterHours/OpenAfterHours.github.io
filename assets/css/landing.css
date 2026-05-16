@@ -304,6 +304,11 @@ body { font-family: var(--font-sans); }
   color: var(--oah-orange);
   display: inline-flex; align-items: center; gap: 6px;
 }
+.t1-flip-back-head .t1-flip-links {
+  display: inline-flex; align-items: center; gap: 14px;
+}
+.t1-flip-back-head .gh-link.pages { color: var(--oah-owl-eye); }
+.t1-flip-back-head .gh-link.pages:hover { color: var(--oah-orange); }
 
 /* Mission */
 .t1-mission {
